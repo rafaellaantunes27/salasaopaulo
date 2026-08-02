@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Painel estático sobre o público da Sala São Paulo entre 2005 e 2026.">
+  <title>Sala São Paulo — Público em Números</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="mobile-menu" type="button" aria-label="Abrir menu" aria-controls="sidebar" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="mobile-overlay" hidden></div>
+
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#visao-geral" aria-label="Ir para a visão geral">
+      <img src="assets/logo.svg" alt="Sala São Paulo — Público em Números">
+    </a>
+
+    <nav class="side-nav" aria-label="Seções do painel">
+      <p class="nav-label">Painéis</p>
+      <a class="nav-link active" href="#visao-geral"><img src="assets/icon-overview.svg" alt="">Visão geral</a>
+      <a class="nav-link" href="#serie-historica"><img src="assets/icon-trend.svg" alt="">Série histórica</a>
+      <a class="nav-link" href="#distribuicao"><img src="assets/icon-distribution.svg" alt="">Distribuição</a>
+      <a class="nav-link" href="#metas"><img src="assets/icon-target.svg" alt="">Metas e execução</a>
+      <a class="nav-link" href="#eficiencia"><img src="assets/icon-efficiency.svg" alt="">Eficiência</a>
+      <a class="nav-link" href="#pandemia"><img src="assets/icon-pandemic.svg" alt="">Impacto da pandemia</a>
+      <a class="nav-link" href="#previsao"><img src="assets/icon-forecast.svg" alt="">Previsão</a>
+      <a class="nav-link" href="#metodologia"><img src="assets/icon-method.svg" alt="">Ficha técnica</a>
+    </nav>
+
+    <div class="sidebar-note">
+      <p class="eyebrow">Sala São Paulo</p>
+      <strong>Leitura estatística do público</strong>
+      <span>Dados anuais consolidados, gráficos estáticos e interpretação educacional.</span>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <section class="panel-section hero-section" id="visao-geral">
+      <header class="page-header">
+        <div>
+          <span class="section-pill">Painel executivo</span>
+          <h1>O público da Sala São Paulo em números</h1>
+          <p class="lead">Uma leitura estática da evolução anual, das metas, da eficiência dos concertos, do choque da pandemia e da projeção exploratória da série.</p>
+        </div>
+        <div class="header-badges" aria-label="Informações da série">
+          <span class="badge">2005–2025 fechados</span>
+          <span class="badge badge-gold">2026 parcial</span>
+        </div>
+      </header>
+
+      <div class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">Resumo da trajetória</p>
+          <h2>Recuperação consolidada, com leve recuo em 2025</h2>
+          <p>O público total caiu <strong>70,8%</strong> em 2020, voltou a crescer nos anos seguintes e chegou a <strong>308.976 pessoas em 2024</strong>, 5,9% acima de 2019. Em 2025, o total fechou em <strong>298.279</strong>: queda de 3,5% frente a 2024, mas ainda 2,2% acima do nível pré-pandemia de 2019.</p>
+        </div>
+        <div class="hero-number">
+          <span>Público em 2025</span>
+          <strong>298.279</strong>
+          <small>−3,5% vs. 2024</small>
+        </div>
+      </div>
+
+      <div class="kpi-grid">
+        <article class="stat-card stat-card-featured">
+          <span class="stat-label">Público em 2025</span>
+          <strong class="stat-value">298.279</strong>
+          <span class="stat-foot">último ano fechado · −3,5% vs. 2024</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Média histórica</span>
+          <strong class="stat-value">170.167</strong>
+          <span class="stat-foot">21 anos fechados · 2005–2025</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Mediana anual</span>
+          <strong class="stat-value">143.000</strong>
+          <span class="stat-foot">metade dos anos abaixo e metade acima</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Desvio-padrão</span>
+          <strong class="stat-value">80.846</strong>
+          <span class="stat-foot">amostral · CV de 47,5%</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Média recente</span>
+          <strong class="stat-value">225.378</strong>
+          <span class="stat-foot">janela 2019–2025 · CV de 37,9%</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Atingimento de meta</span>
+          <strong class="stat-value">111,8%</strong>
+          <span class="stat-foot">média de 10 anos · meta batida em 8</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Execução de concertos</span>
+          <strong class="stat-value">102,8%</strong>
+          <span class="stat-foot">3.119 realizados de 3.035 planejados</span>
+        </article>
+        <article class="stat-card stat-card-soft">
+          <span class="stat-label">2026 observado</span>
+          <strong class="stat-value">59.743</strong>
+          <span class="stat-foot">valor parcial · 1º quadrimestre</span>
+        </article>
+      </div>
+
+      <div class="concept-strip">
+        <span>Conceito estatístico</span>
+        <p><strong>Estatística descritiva e dispersão:</strong> média, mediana, desvio-padrão e coeficiente de variação resumem o nível e a instabilidade do público ao longo do tempo.</p>
+      </div>
+    </section>
+
+    <section class="panel-section" id="serie-historica">
+      <header class="section-header">
+        <div>
+          <span class="section-pill">Série temporal</span>
+          <h2>Evolução do público anual</h2>
+          <p>A linha observada mostra os totais anuais; a média móvel de três anos suaviza oscilações e ajuda a enxergar o movimento de fundo.</p>
+        </div>
+        <span class="concept-badge">Média móvel · tendência</span>
+      </header>
+
+      <article class="chart-card">
+        <img src="assets/serie-historica.png" alt="Gráfico de linha do público anual de 2005 a 2025, com média móvel de três anos e 2026 parcial.">
+      </article>
+
+      <div class="insight-grid three-columns">
+        <article class="insight-card">
+          <span class="insight-number">01</span>
+          <h3>Expansão inicial</h3>
+          <p>O valor de 2005 é muito menor que os anos seguintes. Entre 2006 e 2009, o público anual permanece na faixa de 120 mil a 150 mil pessoas, acompanhando uma programação mais ampla que a registrada no início da série.</p>
+        </article>
+        <article class="insight-card insight-alert">
+          <span class="insight-number">02</span>
+          <h3>Ruptura em 2020</h3>
+          <p>A pandemia interrompe a trajetória: o público passa de 291.750 em 2019 para 85.138 em 2020, a maior queda anual do período analisado.</p>
+        </article>
+        <article class="insight-card">
+          <span class="insight-number">03</span>
+          <h3>Retomada e estabilização</h3>
+          <p>A recuperação ganha força a partir de 2021. O pico recente ocorre em 2024; 2025 recua levemente, mas continua acima do total pré-pandemia de 2019.</p>
+        </article>
+      </div>
+
+      <details class="data-details">
+        <summary>Ver a série anual completa</summary>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Ano</th><th>Público</th><th>Ano</th><th>Público</th><th>Ano</th><th>Público</th></tr></thead>
+            <tbody>
+              <tr><td>2005</td><td>26.980</td><td>2012</td><td>132.487</td><td>2019</td><td>291.750</td></tr>
+              <tr><td>2006</td><td>120.000</td><td>2013</td><td>129.364</td><td>2020</td><td>85.138</td></tr>
+              <tr><td>2007</td><td>143.000</td><td>2014</td><td>127.787</td><td>2021</td><td>145.831</td></tr>
+              <tr><td>2008</td><td>149.700</td><td>2015</td><td>309.640</td><td>2022</td><td>199.650</td></tr>
+              <tr><td>2009</td><td>144.800</td><td>2016</td><td>122.561</td><td>2023</td><td>248.020</td></tr>
+              <tr><td>2010</td><td>117.162</td><td>2017</td><td>119.214</td><td>2024</td><td>308.976</td></tr>
+              <tr><td>2011</td><td>111.015</td><td>2018</td><td>242.154</td><td>2025</td><td>298.279</td></tr>
+              <tr><td colspan="4"></td><td>2026</td><td>59.743 <small>(parcial)</small></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <section class="panel-section" id="distribuicao">
+      <header class="section-header">
+        <div>
+          <span class="section-pill">Distribuição</span>
+          <h2>Como os valores anuais se distribuem</h2>
+          <p>O histograma mostra a frequência dos intervalos de público; o boxplot resume quartis, amplitude e possíveis valores extremos.</p>
+        </div>
+        <span class="concept-badge">Quartis · IQR · outliers</span>
+      </header>
+
+      <article class="chart-card">
+        <img src="assets/distribuicao.png" alt="Histograma e boxplot da distribuição do público anual entre 2005 e 2025.">
+      </article>
+
+      <div class="metric-row">
+        <div><span>Q1</span><strong>120.000</strong></div>
+        <div><span>Mediana</span><strong>143.000</strong></div>
+        <div><span>Q3</span><strong>242.154</strong></div>
+        <div><span>IQR</span><strong>122.154</strong></div>
+      </div>
+
+      <div class="analysis-note">
+        <strong>Leitura:</strong> a média de 170.167 fica acima da mediana de 143.000, sinal de assimetria à direita. Pela regra de Tukey (1,5 × IQR), nenhum ano é classificado formalmente como outlier, embora 2020 seja uma ruptura histórica evidente quando analisado no tempo.
+      </div>
+    </section>
+
+    <section class="panel-section" id="metas">
+      <header class="section-header">
+        <div>
+          <span class="section-pill">Planejamento e entrega</span>
+          <h2>Meta de público e execução dos concertos</h2>
+          <p>A comparação destaca o desvio entre o que foi planejado e o que foi realizado, tanto em público quanto em quantidade de apresentações.</p>
+        </div>
+        <span class="concept-badge">Gap · taxa de atingimento</span>
+      </header>
+
+      <div class="chart-stack">
+        <article class="chart-card"><img src="assets/metas.png" alt="Gráficos de meta versus público realizado e gap percentual por ano."></article>
+        <article class="chart-card"><img src="assets/concertos.png" alt="Gráfico de concertos planejados versus realizados por ano."></article>
+      </div>
+
+      <div class="insight-grid three-columns">
+        <article class="insight-card">
+          <span class="insight-kicker">Meta de público</span>
+          <h3>111,8% em média</h3>
+          <p>Nos dez anos com meta disponível, o público superou a meta em oito. Em 2025, o atingimento foi de 117,0%.</p>
+        </article>
+        <article class="insight-card insight-alert">
+          <span class="insight-kicker">Anos críticos</span>
+          <h3>2020 e 2021</h3>
+          <p>Os únicos anos abaixo da meta foram justamente os mais afetados pela pandemia e pelas restrições às atividades presenciais.</p>
+        </article>
+        <article class="insight-card">
+          <span class="insight-kicker">Execução operacional</span>
+          <h3>102,8%</h3>
+          <p>No acumulado dos anos comparáveis, foram realizados 84 concertos a mais que o total inicialmente planejado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel-section" id="eficiencia">
+      <header class="section-header">
+        <div>
+          <span class="section-pill">Eficiência</span>
+          <h2>Público médio por concerto</h2>
+          <p>A razão entre público total e concertos realizados permite separar crescimento de volume de apresentações e desempenho médio por evento.</p>
+        </div>
+        <span class="concept-badge">Razões · correlação de Pearson</span>
+      </header>
+
+      <article class="chart-card">
+        <img src="assets/eficiencia.png" alt="Gráfico do público médio por concerto e dispersão entre número de concertos e público médio.">
+      </article>
+
+      <div class="split-analysis">
+        <div>
+          <h3>Mais concertos diluem a média?</h3>
+          <p>Na série disponível, a correlação é <strong>negativa e moderada</strong>: r = −0,526, com p = 0,0208. Isso indica que anos com mais apresentações tendem a apresentar menor público médio por concerto.</p>
+        </div>
+        <div class="caution-box">
+          <span>Importante</span>
+          <p>Correlação não prova causalidade. Escopo da programação, capacidade dos espaços, eventos gratuitos, duplicidade de registros anuais e mudanças de cobertura também influenciam a razão.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel-section" id="pandemia">
+      <header class="section-header">
+        <div>
+          <span class="section-pill">Análise de intervenção</span>
+          <h2>O impacto da pandemia</h2>
+          <p>A comparação de janelas resume o antes e o depois; o SARIMAX tenta isolar o choque específico de 2020–2021 dentro da dinâmica temporal.</p>
+        </div>
+        <span class="concept-badge">Teste de hipótese · intervenção</span>
+      </header>
+
+      <article class="chart-card">
+        <img src="assets/pandemia.png" alt="Comparação entre períodos pré e pós-pandemia com médias e intervalos de confiança.">
+      </article>
+
+      <div class="impact-banner">
+        <div><span>Choque observado em 2020</span><strong>−70,8%</strong></div>
+        <div><span>Efeito estimado pelo SARIMAX</span><strong>−48,4%</strong></div>
+        <div><span>Teste de Welch</span><strong>p = 0,109</strong></div>
+      </div>
+
+      <div class="analysis-note">
+        <strong>Interpretação:</strong> a queda de 2020 é inequívoca. Já a diferença entre as médias das janelas pré e pós não aparece como estatisticamente significativa a 5%, porque há poucos anos e os totais recentes também refletem mudanças de cobertura e categorias registradas. O resultado deve ser tratado como exploratório.
+      </div>
+    </section>
+
+    <section class="panel-section" id="previsao">
+      <header class="section-header">
+        <div>
+          <span class="section-pill">Projeção exploratória</span>
+          <h2>Previsão do público anual</h2>
+          <p>O modelo selecionado considera a dependência temporal e uma variável de intervenção para 2020–2021. A previsão representa um ano completo, não o valor parcial observado em 2026.</p>
+        </div>
+        <span class="concept-badge">SARIMAX · intervalo de confiança</span>
+      </header>
+
+      <article class="chart-card">
+        <img src="assets/previsao.png" alt="Previsão SARIMAX para 2026 a 2028, com intervalo de 80% e valor parcial de 2026.">
+      </article>
+
+      <div class="forecast-grid">
+        <article class="forecast-card forecast-main">
+          <span>Previsão para 2026</span>
+          <strong>227.870</strong>
+          <small>pessoas no ano completo</small>
+        </article>
+        <article class="forecast-card">
+          <span>Intervalo de 80%</span>
+          <strong>142.317–364.851</strong>
+          <small>faixa ampla por causa da incerteza</small>
+        </article>
+        <article class="forecast-card">
+          <span>Projeção 2027</span>
+          <strong>207.570</strong>
+          <small>estimativa central</small>
+        </article>
+        <article class="forecast-card">
+          <span>Projeção 2028</span>
+          <strong>200.966</strong>
+          <small>estimativa central</small>
+        </article>
+      </div>
+
+      <div class="caution-box wide">
+        <span>Limitação da previsão</span>
+        <p>A série tem apenas um ponto por ano e apresenta mudanças de escopo. Por isso, o intervalo é largo e a projeção serve como exercício estatístico, não como compromisso operacional.</p>
+      </div>
+    </section>
+
+    <section class="panel-section" id="metodologia">
+      <header class="section-header">
+        <div>
+          <span class="section-pill">Transparência</span>
+          <h2>Ficha técnica e comparação de modelos</h2>
+          <p>Resumo do recorte, das escolhas estatísticas e das métricas usadas para justificar o modelo apresentado.</p>
+        </div>
+        <span class="concept-badge">Qualidade de ajuste</span>
+      </header>
+
+      <div class="method-grid">
+        <article class="method-card">
+          <h3>Base e período</h3>
+          <dl>
+            <div><dt>Fonte</dt><dd>Sala São Paulo / OSESP — série oficial fornecida</dd></div>
+            <div><dt>Anos fechados</dt><dd>2005–2025 (n = 21)</dd></div>
+            <div><dt>Ano parcial</dt><dd>2026, 1º quadrimestre</dd></div>
+            <div><dt>Critério do total</dt><dd>Soma literal dos registros de público por ano</dd></div>
+          </dl>
+        </article>
+        <article class="method-card">
+          <h3>Modelo escolhido</h3>
+          <dl>
+            <div><dt>Especificação</dt><dd>SARIMAX(1,0,0) no log da série</dd></div>
+            <div><dt>Intervenção</dt><dd>Dummy para 2020–2021</dd></div>
+            <div><dt>AIC</dt><dd>20,5</dd></div>
+            <div><dt>AICc</dt><dd>24,2</dd></div>
+          </dl>
+        </article>
+        <article class="method-card">
+          <h3>Modelo de referência</h3>
+          <dl>
+            <div><dt>Regressão linear</dt><dd>2010–2025</dd></div>
+            <div><dt>R²</dt><dd>0,338</dd></div>
+            <div><dt>Tendência estimada</dt><dd>+10.041 pessoas/ano</dd></div>
+            <div><dt>p-valor</dt><dd>0,018</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <article class="model-choice">
+        <div class="model-choice-mark">✓</div>
+        <div>
+          <h3>Por que o SARIMAX foi mantido?</h3>
+          <p>A regressão resume uma tendência média, mas não trata a dependência entre anos nem o choque temporário da pandemia. O SARIMAX incorpora esses dois elementos e reproduz exatamente as métricas de ajuste apresentadas: AIC 20,5, AICc 24,2 e efeito estimado de −48,4% em 2020–2021.</p>
+        </div>
+      </article>
+
+      <div class="method-warning">
+        <strong>Nota de comparabilidade:</strong> a quantidade e o escopo das categorias registradas mudam entre os anos. Assim, variações do total não devem ser interpretadas apenas como mudança de demanda. Os resultados são adequados para análise educacional e exploratória.
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img src="assets/logo.svg" alt="" aria-hidden="true">
+      <div>
+        <strong>Público da Sala São Paulo em Números</strong>
+        <span>Painel estático · nenhum cálculo é executado no navegador</span>
+      </div>
+      <a href="#visao-geral">Voltar ao início ↑</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
