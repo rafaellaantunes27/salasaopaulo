@@ -80,62 +80,62 @@
         <div>
           <span class="section-pill">Série temporal</span>
           <h2>Série histórica e previsão de público</h2>
-          <p>Esta seção reproduz exatamente o resultado do modelo enviado: 22 observações anuais, de 2005 a 2026, com os dados agregados por ano e previsão para 2027.</p>
+          <p>Esta seção usa a previsão SARIMA oficial do arquivo SALASP.xlsx. O modelo foi ajustado sobre 2010–2025, com uma variável de intervenção para 2020–2021; o valor observado de 2026 é parcial e aparece separado da previsão de ano cheio.</p>
         </div>
-        <span class="concept-badge">Regressão · previsão 2027</span>
+        <span class="concept-badge">SARIMA · previsão 2026–2028</span>
       </header>
 
       <article class="chart-card">
-        <img src="assets/bloco2_serie.png" alt="Série histórica de público de 2005 a 2026 e previsão de 204.903 pessoas para 2027, com intervalo de confiança de 95% entre 64.714 e 345.091.">
+        <img src="assets/bloco2_serie.png" alt="Série histórica de público, ajuste SARIMA e previsões de 227.870 pessoas em 2026, 207.570 em 2027 e 200.966 em 2028, com intervalos de 80%. O público parcial observado em 2026 é 59.743.">
       </article>
 
       <div class="insight-grid three-columns">
         <article class="insight-card">
           <span class="insight-number">01</span>
           <h3>Base do modelo</h3>
-          <p>O pipeline utilizou 22 pontos anuais, de 2005 a 2026. A validação separou 18 pontos para treino e os 4 últimos para teste.</p>
+          <p>O SARIMA foi ajustado à série anual de 2010 a 2025. O choque de 2020–2021 entrou no modelo por meio de uma variável de intervenção específica.</p>
         </article>
         <article class="insight-card insight-alert">
           <span class="insight-number">02</span>
-          <h3>Choque de 2020</h3>
-          <p>Na série agregada usada pelo modelo, o público caiu de 291.750 em 2019 para 85.138 em 2020, redução de aproximadamente 70,8%.</p>
+          <h3>Efeito da pandemia</h3>
+          <p>O efeito estimado pelo modelo foi de −48,4%. Esse valor representa o impacto associado à intervenção da pandemia dentro do ajuste SARIMA.</p>
         </article>
         <article class="insight-card">
           <span class="insight-number">03</span>
-          <h3>Previsão com alta incerteza</h3>
-          <p>A regressão estima 204.903 pessoas em 2027, mas o intervalo de confiança é amplo: de 64.714 a 345.091 pessoas.</p>
+          <h3>Previsão de ano cheio</h3>
+          <p>Para 2026, o modelo prevê 227.870 pessoas. O intervalo de 80% vai de 142.317 a 364.851, indicando incerteza elevada.</p>
         </article>
       </div>
 
       <div class="forecast-grid temporal-forecast-grid">
         <article class="forecast-card forecast-main">
+          <span>Previsão 2026 · ano cheio</span>
+          <strong>227.870</strong>
+          <small>IC 80%: 142.317 a 364.851</small>
+        </article>
+        <article class="forecast-card">
           <span>Previsão 2027</span>
-          <strong>204.903</strong>
-          <small>Valor previsto pelo melhor modelo</small>
+          <strong>207.570</strong>
+          <small>IC 80%: 126.127 a 341.602</small>
         </article>
         <article class="forecast-card">
-          <span>Limite inferior · IC 95%</span>
-          <strong>64.714</strong>
-          <small>Faixa inferior da projeção</small>
+          <span>Previsão 2028</span>
+          <strong>200.966</strong>
+          <small>IC 80%: 121.725 a 331.792</small>
         </article>
         <article class="forecast-card">
-          <span>Limite superior · IC 95%</span>
-          <strong>345.091</strong>
-          <small>Faixa superior da projeção</small>
-        </article>
-        <article class="forecast-card">
-          <span>Modelo selecionado</span>
-          <strong>Regressão</strong>
-          <small>MAPE 70,62% · AIC 399,5988</small>
+          <span>Modelo oficial</span>
+          <strong>SARIMA</strong>
+          <small>AIC 20,52 · AICc 24,16</small>
         </article>
       </div>
 
       <div class="analysis-note temporal-warning">
-        <strong>Resultado exato do pipeline:</strong> MAE de 111.879,19; RMSE de 115.160,84; MAPE de 70,62%; AIC de 399,5988. O intervalo muito amplo mostra que a previsão deve ser interpretada como exploratória.
+        <strong>Leitura correta de 2026:</strong> 59.743 é o valor parcial observado no arquivo. Já 227.870 é a previsão SARIMA para o ano completo. Os dois números têm significados diferentes e não devem ser comparados como se fossem dois totais anuais fechados.
       </div>
 
       <details class="data-details">
-        <summary>Ver a série anual usada pelo modelo</summary>
+        <summary>Ver a série anual apresentada no arquivo</summary>
         <div class="table-wrap">
           <table>
             <thead><tr><th>Ano</th><th>Público</th><th>Ano</th><th>Público</th><th>Ano</th><th>Público</th></tr></thead>
@@ -145,8 +145,8 @@
               <tr><td>2007</td><td>143.000</td><td>2015</td><td>309.640</td><td>2023</td><td>248.020</td></tr>
               <tr><td>2008</td><td>149.700</td><td>2016</td><td>122.561</td><td>2024</td><td>308.976</td></tr>
               <tr><td>2009</td><td>144.800</td><td>2017</td><td>119.214</td><td>2025</td><td>298.279</td></tr>
-              <tr><td>2010</td><td>117.162</td><td>2018</td><td>242.154</td><td>2026</td><td>59.743</td></tr>
-              <tr><td>2011</td><td>111.015</td><td>2019</td><td>291.750</td><td>2027</td><td>204.903 <small>(previsão)</small></td></tr>
+              <tr><td>2010</td><td>117.162</td><td>2018</td><td>242.154</td><td>2026</td><td>59.743 <small>(parcial)</small></td></tr>
+              <tr><td>2011</td><td>111.015</td><td>2019</td><td>291.750</td><td colspan="2"></td></tr>
               <tr><td>2012</td><td>132.487</td><td>2020</td><td>85.138</td><td colspan="2"></td></tr>
             </tbody>
           </table>
@@ -154,14 +154,22 @@
       </details>
 
       <details class="data-details">
-        <summary>Ver comparação dos modelos</summary>
+        <summary>Ver previsões e indicadores SARIMA</summary>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Posição</th><th>Modelo</th><th>MAE</th><th>RMSE</th><th>MAPE</th><th>Resultado</th></tr></thead>
+            <thead><tr><th>Ano</th><th>Previsão</th><th>Limite inferior · 80%</th><th>Limite superior · 80%</th></tr></thead>
             <tbody>
-              <tr><td>1</td><td>Regressão</td><td>111.879,19</td><td>115.160,84</td><td>70,62%</td><td>Selecionado</td></tr>
-              <tr><td>2</td><td>ARIMA</td><td>99.058,00</td><td>104.395,26</td><td>80,53%</td><td>Não selecionado</td></tr>
-              <tr><td>3</td><td>Holt-Winters</td><td>95.446,79</td><td>105.430,62</td><td>87,60%</td><td>Não selecionado</td></tr>
+              <tr><td>2026</td><td>227.870</td><td>142.317</td><td>364.851</td></tr>
+              <tr><td>2027</td><td>207.570</td><td>126.127</td><td>341.602</td></tr>
+              <tr><td>2028</td><td>200.966</td><td>121.725</td><td>331.792</td></tr>
+            </tbody>
+          </table>
+          <table>
+            <thead><tr><th>Indicador</th><th>Resultado</th></tr></thead>
+            <tbody>
+              <tr><td>Efeito estimado da pandemia</td><td>−48,4%</td></tr>
+              <tr><td>AIC</td><td>20,52</td></tr>
+              <tr><td>AICc</td><td>24,16</td></tr>
             </tbody>
           </table>
         </div>
@@ -302,18 +310,18 @@
           <h3>Indicadores do modelo</h3>
           <dl>
             <div><dt>Efeito SARIMAX da pandemia</dt><dd>−48,4%</dd></div>
-            <div><dt>AIC</dt><dd>20,5</dd></div>
-            <div><dt>AICc</dt><dd>24,2</dd></div>
+            <div><dt>AIC</dt><dd>20,52</dd></div>
+            <div><dt>AICc</dt><dd>24,16</dd></div>
             <div><dt>R² da regressão de eficiência</dt><dd>0,043</dd></div>
           </dl>
         </article>
         <article class="method-card">
           <h3>Previsão da série temporal</h3>
           <dl>
-            <div><dt>Modelo selecionado</dt><dd>Regressão</dd></div>
-            <div><dt>Previsão 2027</dt><dd>204.903 pessoas</dd></div>
-            <div><dt>IC 95%</dt><dd>64.714 a 345.091</dd></div>
-            <div><dt>Validação</dt><dd>18 pontos de treino, 4 de teste; MAPE = 70,62%</dd></div>
+            <div><dt>Modelo</dt><dd>SARIMA oficial do Excel</dd></div>
+            <div><dt>Previsão 2026</dt><dd>227.870 pessoas</dd></div>
+            <div><dt>Intervalo de 80%</dt><dd>142.317 a 364.851</dd></div>
+            <div><dt>Previsões seguintes</dt><dd>2027: 207.570 · 2028: 200.966</dd></div>
           </dl>
         </article>
       </div>
@@ -322,7 +330,7 @@
         <div class="model-choice-mark">✓</div>
         <div>
           <h3>Controle de consistência</h3>
-          <p>Cinco gráficos permanecem exatamente como os arquivos de referência enviados. Apenas a seção de série temporal usa o pipeline do arquivo novo: dados agregados de 2005–2026, regressão selecionada e previsão de 204.903 para 2027; nenhuma conta é executada no navegador.</p>
+          <p>Cinco gráficos permanecem exatamente como os arquivos de referência enviados. Apenas a seção de série temporal usa o SARIMA oficial de SALASP.xlsx, com previsão de ano cheio para 2026–2028 e intervalos de 80%; nenhuma conta é executada no navegador.</p>
         </div>
       </article>
 

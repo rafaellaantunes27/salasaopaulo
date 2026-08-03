@@ -1,7 +1,10 @@
-modelo_selecionado;ano_previsao;previsao;limite_inferior_95;limite_superior_95;mae_teste;rmse_teste;mape_teste_percentual;aic;treino_pontos;teste_pontos
-Regressão;2027;204903;64714;345091;111879.1905;115160.8406;70.6228;399.5988;18;4
+﻿modelo;ano;previsao;limite_inferior_80;limite_superior_80
+SARIMA;2026;227870;142317;364851
+SARIMA;2027;207570;126127;341602
+SARIMA;2028;200966;121725;331792
 
-modelo;mae_teste;rmse_teste;mape_teste_percentual
-Regressão;111879.19;115160.84;70.62
-ARIMA;99058.00;104395.26;80.53
-Holt-Winters;95446.79;105430.62;87.60
+indicador;valor
+efeito_estimado_pandemia;-0.484322925488454
+AIC;20.52190260432459
+AICc;24.15826624068823
+publico_2026_parcial;59743
