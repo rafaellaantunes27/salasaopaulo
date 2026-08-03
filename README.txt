@@ -1,18 +1,7 @@
-SALA SÃO PAULO — SITE ESTÁTICO
+SITE ESTÁTICO — SALA SÃO PAULO
 
-Abra index.html no navegador.
-
-Alterações desta versão:
-- somente a seção de série temporal recebeu novo gráfico e previsão;
-- todos os demais números e gráficos foram preservados;
-- paleta visual ajustada para azul, laranja, branco e cinza, combinando com os gráficos;
-- nenhuma conta é executada no navegador.
-
-Arquivos de auditoria:
-- dados_conferidos.csv
-- previsao_serie_temporal.csv
-- MODELO_SERIE_TEMPORAL.txt
-
-
-CORREÇÃO DA SÉRIE TEMPORAL
-A seção de série temporal usa o SARIMA oficial de SALASP.xlsx: previsão 2026 de 227.870 (IC 80%: 142.317–364.851), 2027 de 207.570 e 2028 de 200.966.
+1. Abra index.html no navegador.
+2. O site não calcula nem busca dados: todos os números são estáticos.
+3. Os seis gráficos são exatamente os arquivos de referência enviados.
+4. Recorte: concertos sinfônicos da Temporada, anos fechados de 2005 a 2025.
+5. 2026 aparece somente como dado parcial do 1º quadrimestre.
