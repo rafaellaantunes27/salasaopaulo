@@ -1,0 +1,9 @@
+Série temporal adicionada a partir de SALASP(1).xlsx.
+Nenhum gráfico novo foi criado.
+Os seis PNGs originais permanecem byte a byte idênticos.
+
+Previsões:
+2026: 227.870 | IC 80% 142.317–364.851
+2027: 207.570 | IC 80% 126.127–341.602
+2028: 200.966 | IC 80% 121.725–331.792
+Efeito pandemia: -48,4% | AIC 20,52 | AICc 24,16
