@@ -25,7 +25,7 @@
       <a class="nav-link" href="#metas"><img src="assets/icon-target.svg" alt="">Metas e execução</a>
       <a class="nav-link" href="#eficiencia"><img src="assets/icon-efficiency.svg" alt="">Eficiência</a>
       <a class="nav-link" href="#pandemia"><img src="assets/icon-pandemic.svg" alt="">Impacto da pandemia</a>
-      <a class="nav-link" href="#previsao-sarima"><img src="assets/icon-forecast.svg" alt="">Série temporal SARIMA</a>
+      <a class="nav-link" href="#previsao-sarima"><img src="assets/icon-forecast.svg" alt="">Série temporal ARIMA</a>
       <a class="nav-link" href="#metodologia"><img src="assets/icon-method.svg" alt="">Ficha técnica</a>
     </nav>
     <div class="sidebar-note">
@@ -239,59 +239,33 @@
     <section class="panel-section" id="previsao-sarima">
       <header class="section-header">
         <div>
-          <span class="section-pill">Série temporal do Excel</span>
-          <h2>Série oficial e previsão SARIMA</h2>
+          <h2>Série e previsão ARIMA</h2>
         </div>
-        <span class="concept-badge">SARIMA · intervenção · IC 80%</span>
+        <span class="concept-badge">ARIMA · intervenção · IC 95%</span>
       </header>
 
-   
+      <article class="chart-card">
+        <img src="assets/image.png" alt="previsão ARIMA do público anual de 2005 a 2026, com intervalo de confiança de 95%.">
+      </article>
 
       <div class="forecast-grid">
         <article class="forecast-card forecast-main">
           <span>Previsão 2026 · ano cheio</span>
-          <strong>227.870</strong>
-          <small>IC 80%: 142.317 a 364.851</small>
+          <strong>102,513</strong>
+          <small>IC 95%: 52,439 - 152,586</small>
         </article>
-        <article class="forecast-card">
-          <span>Previsão 2027</span>
-          <strong>207.570</strong>
-          <small>IC 80%: 126.127 a 341.602</small>
+        <article class="forecast-card forecast-main">
+          <span>Modelo escolhido</span>
+          <strong>ARIMA</strong>
+          <small>I  MAE:  47224.0398
+            AIC:  406.3347</small>
         </article>
-        <article class="forecast-card">
-          <span>Previsão 2028</span>
-          <strong>200.966</strong>
-          <small>IC 80%: 121.725 a 331.792</small>
-        </article>
-        <article class="forecast-card">
-          <span>Observado em 2026</span>
-          <strong>59.743</strong>
-          <small>Ano parcial; não equivale à previsão anual</small>
+        <article class="forecast-card forecast-main">
+          <span>MAPE</span>
+          <strong>46.42%</strong>
         </article>
       </div>
 
-      <div class="metric-row temporal-metrics">
-        <div><span>Efeito pandemia</span><strong>−48,4%</strong></div>
-        <div><span>AIC</span><strong>20,52</strong></div>
-        <div><span>AICc</span><strong>24,16</strong></div>
-        <div><span>Horizonte</span><strong>2026–2028</strong></div>
-      </div>
-
-      <details class="data-details" open>
-        <summary>Previsões e intervalos do modelo</summary>
-        <div class="table-wrap">
-          <table class="temporal-table">
-            <thead>
-              <tr><th>Ano</th><th>Previsão</th><th>Limite inferior 80%</th><th>Limite superior 80%</th><th>Observação</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>2026</td><td>227.870</td><td>142.317</td><td>364.851</td><td>Ano cheio; 59.743 é o observado parcial</td></tr>
-              <tr><td>2027</td><td>207.570</td><td>126.127</td><td>341.602</td><td>Projeção</td></tr>
-              <tr><td>2028</td><td>200.966</td><td>121.725</td><td>331.792</td><td>Projeção</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </details>
 
       <details class="data-details">
         <summary>Ver a série oficial completa do Excel</summary>
@@ -311,79 +285,21 @@
               <tr><td>2012</td><td>132.487</td><td>+19,3%</td><td>120.221</td></tr>
               <tr><td>2013</td><td>129.364</td><td>−2,4%</td><td>124.289</td></tr>
               <tr><td>2014</td><td>127.787</td><td>−1,2%</td><td>129.879</td></tr>
-              <tr><td>2015</td><td>309.640</td><td>+142,3%</td><td>188.930</td></tr>
-              <tr><td>2016</td><td>122.561</td><td>−60,4%</td><td>186.663</td></tr>
-              <tr><td>2017</td><td>119.214</td><td>−2,7%</td><td>183.805</td></tr>
-              <tr><td>2018</td><td>242.154</td><td>+103,1%</td><td>161.310</td></tr>
-              <tr><td>2019</td><td>291.750</td><td>+20,5%</td><td>217.706</td></tr>
-              <tr><td>2020</td><td>85.138</td><td>−70,8%</td><td>206.347</td></tr>
-              <tr><td>2021</td><td>145.831</td><td>+71,3%</td><td>174.240</td></tr>
-              <tr><td>2022</td><td>199.650</td><td>+36,9%</td><td>143.540</td></tr>
-              <tr><td>2023</td><td>248.020</td><td>+24,2%</td><td>197.834</td></tr>
-              <tr><td>2024</td><td>308.976</td><td>+24,6%</td><td>252.215</td></tr>
-              <tr><td>2025</td><td>298.279</td><td>−3,5%</td><td>285.092</td></tr>
-              <tr><td>2026</td><td>59.743</td><td>−80,0%</td><td>222.333</td></tr>
+              <tr><td>2015</td><td>136.201</td><td>+6,6%</td><td>131.117</td></tr>
+              <tr><td>2016</td><td>122.561</td><td>−10,0%</td><td>128.850</td></tr>
+              <tr><td>2017</td><td>119.214</td><td>−2,7%</td><td>125.992</td></tr>
+              <tr><td>2018</td><td>113.704</td><td>−4,6%</td><td>118.493</td></tr>
+              <tr><td>2019</td><td>106.014</td><td>−6,8%</td><td>112.977</td></tr>
+              <tr><td>2020</td><td>34.085</td><td>−67,8%</td><td>84.601</td></tr>
+              <tr><td>2021</td><td>56.762</td><td>+66,5%</td><td>65.620</td></tr>
+              <tr><td>2022</td><td>86.397</td><td>+52,2%</td><td>59.081</td></tr>
+              <tr><td>2023</td><td>109.106</td><td>+26,3%</td><td>84.088</td></tr>
+              <tr><td>2024</td><td>111.802</td><td>+2,5%</td><td>102.435</td></tr>
+              <tr><td>2025</td><td>94.467</td><td>−15,5%</td><td>105.125</td></tr>
             </tbody>
           </table>
         </div>
       </details>
-
-      <div class="caution-box wide">
-        <span>Leitura correta</span>
-        <p>O valor de 59.743 em 2026 é parcial. A previsão de 227.870 representa uma estimativa para o ano completo e possui intervalo amplo, de 142.317 a 364.851 pessoas.</p>
-      </div>
-    </section>
-
-    <section class="panel-section" id="metodologia">
-      <header class="section-header">
-        <div>
-          <span class="section-pill">Transparência</span>
-          <h2>Ficha técnica e comparação de modelos</h2>
-        </div>
-        <span class="concept-badge">Qualidade de ajuste</span>
-      </header>
-
-      <div class="method-grid">
-        <article class="method-card">
-          <h3>Base e período</h3>
-          <dl>
-            <div><dt>Fonte</dt><dd>Sala São Paulo / OSESP — série oficial fornecida</dd></div>
-            <div><dt>Recorte</dt><dd>Concertos sinfônicos da Temporada</dd></div>
-            <div><dt>Anos fechados</dt><dd>2005–2025 (n = 21)</dd></div>
-            <div><dt>Ano parcial</dt><dd>2026, 1º quadrimestre: 22.740 pessoas</dd></div>
-          </dl>
-        </article>
-        <article class="method-card">
-          <h3>Indicadores do modelo</h3>
-          <dl>
-            <div><dt>Efeito SARIMAX da pandemia</dt><dd>−48,4%</dd></div>
-            <div><dt>AIC</dt><dd>20,5</dd></div>
-            <div><dt>AICc</dt><dd>24,2</dd></div>
-            <div><dt>R² da regressão de eficiência</dt><dd>0,043</dd></div>
-          </dl>
-        </article>
-        <article class="method-card">
-          <h3>Previsão do Excel</h3>
-          <dl>
-            <div><dt>2026 · ano cheio</dt><dd>227.870</dd></div>
-            <div><dt>2027</dt><dd>207.570</dd></div>
-            <div><dt>2028</dt><dd>200.966</dd></div>
-            <div><dt>Intervalo</dt><dd>80%</dd></div>
-          </dl>
-        </article>
-      </div>
-
-      <article class="model-choice">
-        <div class="model-choice-mark">✓</div>
-        <div>
-          <h3>Controle de consistência</h3>
-          <p>Os seis gráficos exibidos continuam sendo os próprios arquivos de referência enviados, sem qualquer alteração. A nova seção de série temporal usa somente valores textuais e tabelas extraídos do arquivo SALASP(1).xlsx; nenhum gráfico adicional foi criado.</p>
-        </div>
-      </article>
-
-      <div class="method-warning">
-        <strong>Nota:</strong> 2026 é parcial e não entra na média, mediana, desvio-padrão, histograma, boxplot nem comparação das janelas históricas.
-      </div>
     </section>
 
     <footer class="footer">
