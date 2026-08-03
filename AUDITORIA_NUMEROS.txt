@@ -1,0 +1,28 @@
+AUDITORIA DOS NÚMEROS
+
+Recorte usado em todo o site:
+- Concertos sinfônicos da Temporada na Sala São Paulo.
+- Anos fechados: 2005–2025.
+- 2026: parcial, 1º quadrimestre; excluído das estatísticas históricas.
+
+Números principais conferidos:
+- Público 2025: 94.467
+- Variação 2025/2024: -15,5%
+- Média anual: 109.172
+- Mediana anual: 117.162
+- Desvio-padrão amostral: 33.513
+- Coeficiente de variação: 30,7%
+- Média 2019–2025: 85.519
+- CV 2019–2025: 34,5%
+- Atingimento médio de meta: 110,7%; meta superada em 8 de 10 anos
+- Concertos realizados/planejados: 1.585/1.528 = 103,7%
+- Queda 2020/2019: -67,8%
+- Média pré-pandemia 2010–2019: 121.551
+- Média pós-pandemia 2021–2025: 91.707
+- Diferença pós - pré: -29.844
+- Welch p = 0,0365
+- Correlação concertos x público médio: r = 0,207; r² = 0,043; p = 0,3961
+
+Correção aplicada:
+- Foram removidos todos os números do recorte de soma total/ampliada, como 298.279 em 2025.
+- Não foi inserida previsão pontual porque esse valor não aparece nos gráficos de referência enviados.

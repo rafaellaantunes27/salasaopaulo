@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 74" role="img" aria-label="Sala São Paulo — Público em Números">
 <rect width="240" height="74" rx="18" fill="none"/>
-<g transform="translate(2 8)" fill="none" stroke="#C89B5A" stroke-width="2.2">
+<g transform="translate(2 8)" fill="none" stroke="#F1662F" stroke-width="2.2">
   <path d="M4 54V24C4 11 14 1 27 1s23 10 23 23v30"/>
   <path d="M12 54V27c0-9 7-16 15-16s15 7 15 16v27" opacity=".8"/>
   <circle cx="27" cy="24" r="5"/>
@@ -9,6 +9,6 @@
 </g>
 <g fill="#F7F2E9">
   <text x="69" y="31" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing=".3">SALA SÃO PAULO</text>
-  <text x="69" y="51" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#C89B5A">PÚBLICO EM NÚMEROS</text>
+  <text x="69" y="51" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#F1662F">PÚBLICO EM NÚMEROS</text>
 </g>
 </svg>

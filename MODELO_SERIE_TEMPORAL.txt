@@ -1,0 +1,17 @@
+SÉRIE TEMPORAL — RESULTADO ESTÁTICO CORRIGIDO
+
+Dados: 22 anos (2005–2026).
+Treino: 18 pontos.
+Teste: 4 pontos.
+Modelo selecionado: Regressão.
+Previsão 2027: 204.903.
+IC 95%: 64.714 a 345.091.
+MAE: 111.879,1905.
+RMSE: 115.160,8406.
+MAPE: 70,6228%.
+AIC: 399,5988.
+
+Comparação:
+1. Regressão — MAE 111.879,19; RMSE 115.160,84; MAPE 70,62%.
+2. ARIMA — MAE 99.058,00; RMSE 104.395,26; MAPE 80,53%.
+3. Holt-Winters — MAE 95.446,79; RMSE 105.430,62; MAPE 87,60%.
